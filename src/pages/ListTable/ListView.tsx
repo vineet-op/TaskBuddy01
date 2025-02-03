@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+
 import ListTable from './ListTable'
 import { TaskStatus } from '@/store/store'
-import TaskModal from '../Modal/TaskModal';
+
 
 const ListView = () => {
 

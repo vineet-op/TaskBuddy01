@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import Header from '../ListTable/Header.tsx'
+
+import { useState } from 'react';
 import Columns from './Columns.tsx';
-import TaskModal from '../Modal/TaskModal.tsx';
+
 
 
 const Board = () => {

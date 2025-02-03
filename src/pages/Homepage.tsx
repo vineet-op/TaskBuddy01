@@ -1,4 +1,3 @@
-import React from 'react'
 import circle from "../assets/circles_bg.png"
 import task from "../assets/task.png"
 import google from "../assets/google.png"
