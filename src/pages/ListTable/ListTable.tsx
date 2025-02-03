@@ -1,6 +1,3 @@
-"use client"
-
-import React, { useState } from "react"
 import {
     ColumnDef,
     ColumnFiltersState,
@@ -38,8 +35,9 @@ import {
 } from "@/components/ui/table"
 
 import { Input } from "@/components/ui/input"
-import useTodoStore, { Task, TaskStatus, TaskCategory } from "../../store/store"
+import useTodoStore, { Task } from "../../store/store"
 import TaskModal from "../Modal/TaskModal"
+import { useState } from "react"
 
 export const columns: ColumnDef<Task>[] = [
     {
@@ -81,10 +79,7 @@ export const columns: ColumnDef<Task>[] = [
     {
         id: "actions",
         enableHiding: false,
-        cell: ({ row }) => {
-            const task = row.original
-
-            // This component will be defined within the main component to access state
+        cell: () => {
             return null
         },
     },
